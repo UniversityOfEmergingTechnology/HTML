@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <form>
+        <label for="firstname">First name: </label>
+        <input type="text" id="firstname"  placeholder="Enter your Front Name">
+        <br><br>
+<!-- for attribute in the label tag should be equal to the id attribute in input tag so that we can bind them -->
+        <label for="lastname">Last Name: </label>
+        <input type="text" id="lastname" placeholder="Enter your Last Name">
+        <br><br>
+        <label for="typeOfShirt">Type of Shirt: </label>
+
+        <!-- drop down list -->
+        <select name="" id="typeOfShirt">
+            <option value="Sleeveless">Sleeveless</option>
+            <option value="Full T shirts" selected>Full T Shirts</option>
+            <option value="Half T Shirts">Half T Shirts</option>
+        </select>
+        <br><br>
+        <!-- radio buttons -->
+        <label for="size">Size: </label>
+        <input type="radio" id="large" name="size">
+        <label for="large">Large</label>
+        <input type="radio" id="medium" name="size">
+        <label for="medium">Medium</label>
+        <input type="radio" id="small" name="size">
+        <label for="small">Small</label>
+
+        <br><br>
+        <!--  checkboxes -->
+        <label for="Color">Color : </label>
+        <input type="checkbox" id="red" name="Color">
+        <label for="red">Red</label>
+        <input type="checkbox" id="navy" name="Color">
+        <label for="navy">Navy</label>
+        <input type="checkbox" id="black" name="Color">
+        <label for="black">Black</label>
+
+        <!-- textarea -->
+        <br><br>
+        <p><label for="comments">Comments? </label></p>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+
+        <br> <br>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
